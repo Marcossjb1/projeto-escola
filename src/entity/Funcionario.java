@@ -1,4 +1,4 @@
-package src;
+package src.entity;
 
 public class Funcionario {
     public String nome;
@@ -6,5 +6,7 @@ public class Funcionario {
     public String cpf;
     public int idade;
     public Double salario;
+
+    //TODO: GERAR OS GETTERS E SETTERS E CONSTRUTOR -> Maycon
 
 }

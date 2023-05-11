@@ -1,12 +1,11 @@
 package src;
 
 import java.util.Scanner;
+import src.entity.CronogramaAlimentarCantina;
 
 public class Main {
 
   public static void main(String[] args) {
-    //TODO: CRIAR CLASSE ALUNO COM AS SEGUINTES VARIAVEIS(nome,idade,cpf,matricula,nota) -> Marcos
-    //TODO: CRIAR CLASSE CronogramaAlimentarCantina(vocês escolhem as variaveis) e também criar uma função que ao chamar a mesma ela retorna a seguinte frase "HORA DO RANGO" -> Marcos
 
     CronogramaAlimentarCantina cantina = new CronogramaAlimentarCantina();
     Scanner scanner = new Scanner(System.in);
@@ -31,5 +30,10 @@ public class Main {
 
     String resultado = cantina.verificarHoraDoRango();
     System.out.println(resultado);
+
+    //TODO: CRIAR DOIS ALUNOS, UM TEM COMO HABILIDADE EM JAVA E O OUTRO EM LOGICA DE PROGRAMACAO, IMPRIMIR DADOS NA TELA -> Marcos
+    //TODO: CRIAR UM PROFESSOR E ATRIBUIR OS SEUS DEVIDOS DADOS -> Maycon
+    //TODO: RODAR ESSA APLICAÇÃO EM MAVEN -> Gui
+
   }
 }
