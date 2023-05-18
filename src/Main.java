@@ -2,6 +2,7 @@ package src;
 
 import java.util.Scanner;
 import src.entity.CronogramaAlimentarCantina;
+import src.entity.Professor;
 
 public class Main {
 
@@ -32,7 +33,8 @@ public class Main {
     System.out.println(resultado);
 
     //TODO: CRIAR DOIS ALUNOS, UM TEM COMO HABILIDADE EM JAVA E O OUTRO EM LOGICA DE PROGRAMACAO, IMPRIMIR DADOS NA TELA -> Marcos
-    //TODO: CRIAR UM PROFESSOR E ATRIBUIR OS SEUS DEVIDOS DADOS -> Maycon
+    //CRIAR UM PROFESSOR E ATRIBUIR OS SEUS DEVIDOS DADOS -> Maycon
+    Professor professor = new Professor("Fernando","Professor","12365478901",21,3.500,"Java");
     //TODO: RODAR ESSA APLICAÇÃO EM MAVEN -> Gui
 
   }
