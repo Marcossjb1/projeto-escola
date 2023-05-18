@@ -66,6 +66,7 @@ public class CronogramaAlimentarCantina {
   public void setChiclete(String chiclete) {
     this.chiclete = chiclete;
   }
+
   public String verificarHoraDoRango() {
     if (energetico != null || refrigerante != null || salgadinho != null || bolacha != null
         || bala != null || chiclete != null) {
