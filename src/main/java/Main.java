@@ -7,6 +7,7 @@ public class Main {
 
       Scanner scanner = new Scanner(System.in);
       Professor professor = new Professor();
+      //Aqui tu tem que criar um objeto aluno para conseguir chamar tua função
 
       int opcao;
       do{
@@ -22,7 +23,7 @@ public class Main {
             professor.menuProfessor(scanner);
             break;
           case 2:
-
+//Aí aqui tu chama teu objeto com a função, tipo "aluno.menuAluno"
             break;
           case 3:
             System.out.println("Voce escolheu a opcao funcionario");
