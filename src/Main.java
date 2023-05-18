@@ -7,6 +7,9 @@ public class Main {
 
   public static void main(String[] args) {
 
+    Aluno alunoUm = new Aluno();
+    Aluno alunoDois = new Aluno();
+
     CronogramaAlimentarCantina cantina = new CronogramaAlimentarCantina();
     Scanner scanner = new Scanner(System.in);
 
@@ -30,6 +33,8 @@ public class Main {
 
     String resultado = cantina.verificarHoraDoRango();
     System.out.println(resultado);
+
+
 
     //TODO: CRIAR DOIS ALUNOS, UM TEM COMO HABILIDADE EM JAVA E O OUTRO EM LOGICA DE PROGRAMACAO, IMPRIMIR DADOS NA TELA -> Marcos
     //TODO: CRIAR UM PROFESSOR E ATRIBUIR OS SEUS DEVIDOS DADOS -> Maycon
