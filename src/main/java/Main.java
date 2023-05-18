@@ -1,4 +1,3 @@
-
 import entity.Professor;
 import java.util.Scanner;
 
@@ -23,8 +22,7 @@ public class Main {
             professor.menuProfessor(scanner);
             break;
           case 2:
-            //TODO:Criar uma função na classe aluno onde vai vai pedir os dados do mesmo e retornar a informações no console(pode calcular a média) -> Maycon
-            //TODO:A função tem que ser chamada aqui dentro desse caso como foi chamada a função do menu professor no case 1 -> Maycon
+
             break;
           case 3:
             System.out.println("Voce escolheu a opcao funcionario");
