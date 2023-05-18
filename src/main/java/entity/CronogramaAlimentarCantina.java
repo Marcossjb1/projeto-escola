@@ -1,4 +1,4 @@
-package src.entity;
+package entity;
 
 public class CronogramaAlimentarCantina {
 
@@ -9,14 +9,14 @@ public class CronogramaAlimentarCantina {
   public String bala;
   public String chiclete;
 
-  public String verificarHoraDoRango() {
-    if (energetico != null || refrigerante != null || salgadinho != null || bolacha != null
-        || bala != null || chiclete != null) {
-      return "É hora do rango!";
-    } else {
-      return "Não é hora do rango!";
-    }
-
+  public CronogramaAlimentarCantina(String energetico, String refrigerante, String salgadinho,
+      String bolacha, String bala, String chiclete) {
+    this.energetico = energetico;
+    this.refrigerante = refrigerante;
+    this.salgadinho = salgadinho;
+    this.bolacha = bolacha;
+    this.bala = bala;
+    this.chiclete = chiclete;
   }
 
   public String getEnergetico() {
@@ -66,13 +66,12 @@ public class CronogramaAlimentarCantina {
   public void setChiclete(String chiclete) {
     this.chiclete = chiclete;
   }
-
-  public CronogramaAlimentarCantina(String energetico, String refrigerante, String salgadinho, String bolacha, String bala, String chiclete) {
-    this.energetico = energetico;
-    this.refrigerante = refrigerante;
-    this.salgadinho = salgadinho;
-    this.bolacha = bolacha;
-    this.bala = bala;
-    this.chiclete = chiclete;
+  public String verificarHoraDoRango() {
+    if (energetico != null || refrigerante != null || salgadinho != null || bolacha != null
+        || bala != null || chiclete != null) {
+      return "É hora do rango!";
+    } else {
+      return "Não é hora do rango!";
+    }
   }
 }
