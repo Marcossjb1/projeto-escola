@@ -5,10 +5,7 @@ public class Funcionario {
     public String cargo;
     public String cpf;
     public int idade;
-
-    public String getNome() {
-        return nome;
-    }
+    public Double salario;
 
     public Funcionario(String nome, String cargo, String cpf, int idade, Double salario) {
         this.nome = nome;
@@ -16,6 +13,10 @@ public class Funcionario {
         this.cpf = cpf;
         this.idade = idade;
         this.salario = salario;
+    }
+
+    public String getNome() {
+        return nome;
     }
 
     public void setNome(String nome) {
@@ -53,7 +54,5 @@ public class Funcionario {
     public void setSalario(Double salario) {
         this.salario = salario;
     }
-
-    public Double salario;
 
 }
