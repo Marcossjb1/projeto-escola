@@ -1,7 +1,5 @@
 package entity;
 
-import java.util.Scanner;
-
 public class Aluno {
 
   public String nome;
