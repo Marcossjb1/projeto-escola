@@ -63,11 +63,11 @@ public class Funcionario {
   }
 
   public void menuFuncionario(Scanner scanner) {
-    System.out.println("Opção funcionario foi selecionada");
+    System.out.println("Opcao funcionario foi selecionada");
     System.out.println("Digite seu nome:");
     nome = scanner.next();
 
-    System.out.println("Digite o seu cargo: " + nome);
+    System.out.println("Digite o seu cargo, " + nome);
     cargo = scanner.next();
 
     System.out.println("Digite seu cpf:");
@@ -79,6 +79,12 @@ public class Funcionario {
 
     System.out.println("Digite seu salario:");
     salario = scanner.nextDouble();
+
+    System.out.println("Nome: " + nome);
+    System.out.println("Idade: " + idade);
+    System.out.println("CPF: " + cpf);
+    System.out.println("Cargo: " + cargo);
+    System.out.println("Salario: " + salario);
 
   }
 

@@ -24,7 +24,7 @@ public class Professor extends Funcionario {
   }
 
   public void menuProfessor(Scanner scanner) {
-    System.out.println("Opção professor foi selecionada");
+    System.out.println("Opcao professor foi selecionada");
     System.out.println("Digite o nome do professor:");
     nome = scanner.next();
 

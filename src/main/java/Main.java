@@ -13,7 +13,9 @@ public class Main {
 
     int opcao;
     do {
-      System.out.println("Escolha uma opçao:  ");
+      System.out.println(":::::::::::::::::::::::::::::");
+      System.out.println("Escolha uma opcao:  ");
+      System.out.println(":::::::::::::::::::::::::::::");
       System.out.println("1. Professor ");
       System.out.println("2. Aluno");
       System.out.println("3. Funcionario");
