@@ -1,12 +1,17 @@
 package entity;
 
+import java.util.Scanner;
+
 public class Professor extends Funcionario {
     public String materia;
 
-    public Professor(String nome, String cargo, String cpf, int idade, Double salario,
-        String materia) {
+    public Professor(String nome, String cargo, String cpf, int idade, Double salario) {
         super(nome, cargo, cpf, idade, salario);
-        this.materia = materia;
+    }
+
+    public Professor() {
+        super();
+
     }
 
     public String getMateria() {
@@ -15,5 +20,17 @@ public class Professor extends Funcionario {
 
     public void setMateria(String materia) {
         this.materia = materia;
+    }
+
+    public void menuProfessor(Scanner scanner){
+        System.out.println("Opção professor foi selecionada");
+        System.out.println("Digite o nome do professor");
+        nome = scanner.next();
+
+        System.out.println("Digite o nome da matéria");
+        materia = scanner.next();
+
+        System.out.println("Professor: " + nome);
+        System.out.println("Matéria: " + materia);
     }
 }

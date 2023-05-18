@@ -15,6 +15,10 @@ public class Funcionario {
         this.salario = salario;
     }
 
+    public Funcionario() {
+
+    }
+
     public String getNome() {
         return nome;
     }

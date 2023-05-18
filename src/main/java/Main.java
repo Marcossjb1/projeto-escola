@@ -1,4 +1,5 @@
 
+import entity.Professor;
 import java.util.Scanner;
 
 public class Main {
@@ -6,33 +7,38 @@ public class Main {
   public static void main(String[] args) {
 
       Scanner scanner = new Scanner(System.in);
+      Professor professor = new Professor();
+
       int opcao;
       do{
-        System.out.println("Escolha uma opção:  ");
+        System.out.println("Escolha uma opçao:  ");
         System.out.println("1. Professor ");
         System.out.println("2. Aluno");
-        System.out.println("3. Funcionário");
-        System.out.println("4. Cardápio da escola");
+        System.out.println("3. Funcionario");
+        System.out.println("4. Cardapio da escola");
         System.out.println("0. Sair");
         opcao = scanner.nextInt();
         switch (opcao){
           case 1:
-            System.out.println("Você escolheu a opção professor");
+            professor.menuProfessor(scanner);
             break;
           case 2:
-            System.out.println("Você escolheu a opção aluno");
+            //TODO:Criar uma função na classe aluno onde vai vai pedir os dados do mesmo e retornar a informações no console(pode calcular a média) -> Maycon
+            //TODO:A função tem que ser chamada aqui dentro desse caso como foi chamada a função do menu professor no case 1 -> Maycon
             break;
           case 3:
-            System.out.println("Você escolheu a opção funcionario");
+            System.out.println("Voce escolheu a opcao funcionario");
+            //Todo:Criar uma função para o funcionário
             break;
           case 4:
-            System.out.println("Você escolheu a opção cardapio");
+            System.out.println("Voce escolheu a opcao cardapio");
+            //Todo:Criar uma função para o cardápio(peça para o usuário o cardápio do dia) -> Marcos
             break;
           case 0:
             System.out.println("Encerrando programa");
             break;
           default:
-            System.out.println("opção inválida, tente novamente");
+            System.out.println("opcao invalida, tente novamente");
             break;
         }
       }while (opcao!= 0);

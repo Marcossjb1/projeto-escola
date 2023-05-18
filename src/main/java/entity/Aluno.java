@@ -1,5 +1,7 @@
 package entity;
 
+import java.util.Scanner;
+
 public class Aluno {
 
   public String nome;
@@ -18,7 +20,8 @@ public class Aluno {
     this.nota2 = nota2;
   }
 
-  public double calcularMedia() {
+  public double calcularMedia(double nota1, double nota2) {
     return (nota1+nota2)/2;
   }
+
 }
