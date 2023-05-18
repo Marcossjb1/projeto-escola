@@ -1,7 +1,6 @@
-package src;
 
+import entity.CronogramaAlimentarCantina;
 import java.util.Scanner;
-import src.entity.CronogramaAlimentarCantina;
 
 public class Main {
 

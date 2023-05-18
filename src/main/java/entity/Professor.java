@@ -1,4 +1,4 @@
-package src.entity;
+package entity;
 
 public class Professor extends Funcionario {
     public String materia;
