@@ -1,5 +1,7 @@
 package entity;
 
+import static validacao.Validadores.validacaoCPF;
+
 import java.util.Scanner;
 
 public class Funcionario {
@@ -86,25 +88,5 @@ public class Funcionario {
     System.out.println("Cargo: " + cargo);
     System.out.println("Salario: " + salario);
 
-  }
-
-  public static void validacaoCPF(String cpf, Scanner scanner) {
-
-    boolean cpfValido = false;
-
-    do {
-      System.out.println("Digite seu CPF de forma correta, ele deve conter 11 digitos:");
-      cpf = scanner.next();
-
-      cpf = cpf.replaceAll("\\D", "");
-
-      if (cpf.length() == 11) {
-        cpfValido = true;
-      } else {
-        System.out.println("CPF invalido. Tente novamente.");
-      }
-    } while (!cpfValido);
-
-    System.out.println("CPF valido: " + cpf);
   }
 }

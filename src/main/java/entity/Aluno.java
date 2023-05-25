@@ -1,13 +1,15 @@
 package entity;
 
+import static validacao.Validadores.validacaoCPF;
+import static validacao.Validadores.validacaoMatricula;
+
 import java.util.Scanner;
 
 public class Aluno {
-
   public String nome;
   public int idade;
   public String cpf;
-  public int matricula;
+  public String matricula;
   public int nota1;
   public int nota2;
 
@@ -21,9 +23,9 @@ public class Aluno {
     System.out.println("Digite a idade do aluno: ");
     idade = scanner.nextInt();
     System.out.println("Digite o Cpf do aluno: ");
-    cpf = scanner.nextLine();
+    validacaoCPF(cpf, scanner);
     System.out.println("Digite a matricula do aluno: ");
-    matricula = scanner.nextInt();
+    validacaoMatricula(matricula,scanner);
     System.out.println("Digite a primeira nota do aluno(a): ");
     nota1 = scanner.nextInt();
     System.out.println("Digite a segunda nota do aluno(a): ");

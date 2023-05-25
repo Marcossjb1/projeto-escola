@@ -1,4 +1,5 @@
 import entity.Aluno;
+import entity.Funcionario;
 import entity.Professor;
 import java.util.Scanner;
 
@@ -9,6 +10,7 @@ public class Main {
     Scanner scanner = new Scanner(System.in);
     Professor professor = new Professor();
     Aluno aluno = new Aluno();
+    Funcionario funcionario = new Funcionario();
 
     int opcao;
     do {
@@ -28,7 +30,7 @@ public class Main {
           break;
         case 3:
           System.out.println("Voce escolheu a opcao funcionario");
-          //Todo:Criar uma função para o funcionário
+          funcionario.menuFuncionario(scanner);
           break;
         case 4:
           System.out.println("Voce escolheu a opcao cardapio");
