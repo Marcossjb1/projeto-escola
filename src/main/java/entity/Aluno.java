@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Aluno {
 
     public String nome;
-    public String idade;
+    public int idade;
     public String cpf;
     public int matricula;
     public int nota1;
@@ -18,7 +18,11 @@ public class Aluno {
 
         System.out.println("Digite o nome do aluno(a): ");
         nome = scanner.next();
-        System.out.println("Digite o nome do aluno(a): ");
+        System.out.println("Digite a idade do aluno: ");
+        idade = scanner.nextInt();
+        System.out.println("Digite o Cpf do aluno: ");
+        cpf = scanner.nextLine();
+        System.out.println("Digite a matricula do aluno: ");
         matricula = scanner.nextInt();
         System.out.println("Digite a primeira nota do aluno(a): ");
         nota1 = scanner.nextInt();
