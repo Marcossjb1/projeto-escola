@@ -1,4 +1,4 @@
-
+import entity.Aluno;
 import entity.Funcionario;
 import entity.Professor;
 import java.util.Scanner;
@@ -9,13 +9,12 @@ public class Main {
 
     Scanner scanner = new Scanner(System.in);
     Professor professor = new Professor();
+    Aluno aluno = new Aluno();
     Funcionario funcionario = new Funcionario();
 
     int opcao;
     do {
-      System.out.println(":::::::::::::::::::::::::::::");
-      System.out.println("Escolha uma opcao:  ");
-      System.out.println(":::::::::::::::::::::::::::::");
+      System.out.println("Escolha uma opçao:  ");
       System.out.println("1. Professor ");
       System.out.println("2. Aluno");
       System.out.println("3. Funcionario");
@@ -27,10 +26,10 @@ public class Main {
           professor.menuProfessor(scanner);
           break;
         case 2:
-          //TODO:Criar uma função na classe aluno onde vai vai pedir os dados do mesmo e retornar a informações no console(pode calcular a média) -> Maycon
-          //TODO:A função tem que ser chamada aqui dentro desse caso como foi chamada a função do menu professor no case 1 -> Maycon
+          aluno.menuAluno(scanner);
           break;
         case 3:
+          System.out.println("Voce escolheu a opcao funcionario");
           funcionario.menuFuncionario(scanner);
           break;
         case 4:
