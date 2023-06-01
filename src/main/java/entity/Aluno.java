@@ -34,11 +34,18 @@ public class Aluno {
     System.out.println("Olá, " + nome + " Seja bem-vindo.");
 
     double media = calcularMedia(nota1, nota2);
+    verificarAprovacao(media);
     System.out.println("A sua media e " + media);
   }
 
   public double calcularMedia(double nota1, double nota2) {
     return (nota1 + nota2) / 2;
   }
-
+  public void verificarAprovacao(double media){
+    if (media >= 6.0){
+      System.out.println("Parabéns, você foi aprovado!");
+    }else {
+      System.out.println("Infelizmente você foi reprovado");
+    }
+  }
 }
