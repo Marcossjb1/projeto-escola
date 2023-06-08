@@ -1,4 +1,5 @@
 
+import entity.CardapioCantina;
 import entity.Professor;
 import java.util.Scanner;
 
@@ -8,6 +9,7 @@ public class Main {
 
       Scanner scanner = new Scanner(System.in);
       Professor professor = new Professor();
+      CardapioCantina cardapio = new CardapioCantina();
 
       int opcao;
       do{
@@ -23,7 +25,7 @@ public class Main {
             professor.menuProfessor(scanner);
             break;
           case 2:
-            //TODO:Criar uma função na classe aluno onde vai vai pedir os dados do mesmo e retornar a informações no console(pode calcular a média) -> Maycon
+            //TODO:Crir uma função na classe aluno onde vai vai pedir os dados do mesmo e retornar a informações no console(pode calcular a média) -> Maycon
             //TODO:A função tem que ser chamada aqui dentro desse caso como foi chamada a função do menu professor no case 1 -> Maycon
             break;
           case 3:
@@ -32,7 +34,7 @@ public class Main {
             break;
           case 4:
             System.out.println("Voce escolheu a opcao cardapio");
-            //Todo:Criar uma função para o cardápio(peça para o usuário o cardápio do dia) -> Marcos
+            cardapio.menuCardapio();
             break;
           case 0:
             System.out.println("Encerrando programa");
@@ -42,5 +44,7 @@ public class Main {
             break;
         }
       }while (opcao!= 0);
+
+      if ()
     }
 }
