@@ -1,21 +1,7 @@
 package entity;
 
 public class CardapioCantina {
-    public String cardapioCantina;
-
-    public CardapioCantina(String cardapioCantina) {
-        this.cardapioCantina = cardapioCantina;
-    }
-
-    public String getCardapioCantina() {
-        return cardapioCantina;
-    }
-
-    public void setCardapioCantina(String cardapioCantina) {
-        this.cardapioCantina = cardapioCantina;
-    }
-
-    public void menuCardapio() {
+        public void menuCardapio() {
         System.out.println("Energético......................R$13,50");
         System.out.println("Refrigerante.....................R$4,50");
         System.out.println("Salgadinho.......................R$7,90");
