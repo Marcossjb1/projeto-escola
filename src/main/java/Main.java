@@ -1,4 +1,5 @@
 import entity.Aluno;
+import entity.CardapioCantina;
 import entity.Funcionario;
 import entity.Professor;
 import java.util.Scanner;
@@ -11,6 +12,7 @@ public class Main {
     Professor professor = new Professor();
     Aluno aluno = new Aluno();
     Funcionario funcionario = new Funcionario();
+    CardapioCantina cardapio = new CardapioCantina();
 
     int opcao;
     do {
@@ -34,7 +36,7 @@ public class Main {
           break;
         case 4:
           System.out.println("Voce escolheu a opcao cardapio");
-          //Todo:Criar uma função para o cardápio(peça para o usuário o cardápio do dia) -> Marcos
+          cardapio.menuCardapio();
           break;
         case 0:
           System.out.println("Encerrando programa");
