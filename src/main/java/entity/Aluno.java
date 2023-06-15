@@ -10,8 +10,8 @@ public class Aluno {
   public int idade;
   public String cpf;
   public String matricula;
-  public int nota1;
-  public int nota2;
+  public double nota1;
+  public double nota2;
 
   public Aluno() {
   }
@@ -27,18 +27,25 @@ public class Aluno {
     System.out.println("Digite a matricula do aluno: ");
     validacaoMatricula(matricula,scanner);
     System.out.println("Digite a primeira nota do aluno(a): ");
-    nota1 = scanner.nextInt();
+    nota1 = scanner.nextDouble();
     System.out.println("Digite a segunda nota do aluno(a): ");
-    nota2 = scanner.nextInt();
+    nota2 = scanner.nextDouble();
 
-    System.out.println("Olá, " + nome + " Seja bem-vindo.");
+    System.out.println("Ola, " + nome + " Seja bem-vindo.");
 
     double media = calcularMedia(nota1, nota2);
-    System.out.println("A sua media e " + media);
+    verificarAprovacao(media);
   }
 
   public double calcularMedia(double nota1, double nota2) {
     return (nota1 + nota2) / 2;
   }
 
+  public void verificarAprovacao(double media){
+    if (media >= 6.0){
+      System.out.println("Parabens, voce foi aprovado! " + "a sua media e " + media);
+    }else {
+      System.out.println("Infelizmente voce foi reprovado " + "a sua media e " + media);
+    }
+  }
 }
