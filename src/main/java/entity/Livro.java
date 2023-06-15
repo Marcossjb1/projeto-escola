@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Livro {
 
-    private String titulo;
-    private String autor;
-    private String genero;
+    public String titulo;
+    public String autor;
+    public String genero;
 
     public String getTitulo() {
         return titulo;
